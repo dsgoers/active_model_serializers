@@ -47,7 +47,6 @@ module ActiveModelSerializers
         def self.attribute_error_objects(attribute_name, attribute_errors)
           attribute_errors.map do |attribute_error|
             {
-              source: error_source(:pointer, attribute_name),
               detail: attribute_error
             }
           end
